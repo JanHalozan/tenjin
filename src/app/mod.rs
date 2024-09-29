@@ -1,4 +1,3 @@
 pub mod app;
-pub mod app_message;
-
+mod components;
 mod subscriptions;

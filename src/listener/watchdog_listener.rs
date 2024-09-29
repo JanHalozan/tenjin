@@ -5,7 +5,7 @@ use rdev::{Event, EventType, Key, ListenError};
 use tokio::sync::mpsc::Sender as TokioSender;
 use iced::futures::channel::mpsc::Sender as IcedSender;
 
-use crate::app::app_message::AppMessage;
+use crate::model::app_message::AppMessage;
 
 pub fn create_watchdog_listener() -> impl Stream<Item = AppMessage> {
     let callback = |mut output: IcedSender<AppMessage>| async move {
